@@ -1,3 +1,18 @@
+# Crear repositorio
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/elieta103/angular-advanced.git
+git push -u origin main
+
+# Crear Tag
+git tag -a v0.0.1 -m "Diseño Listo"
+git tag
+git push --tags
+
+
+
 # 01AdminPro
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
