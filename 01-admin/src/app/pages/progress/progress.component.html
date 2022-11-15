@@ -1,1 +1,72 @@
-<p>progress works!</p>
+<!-- ============================================================== -->
+<!-- Start Page Content -->
+<!-- ============================================================== -->
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Striped Progress bar</h4>
+        <!-- Progress Bar -->
+        <div class="progress m-t-20">
+          <!-- active la animacion de la barra-->
+          <div
+            class="active progress-bar bg-info progress-bar-striped"
+            style="height: 10px"
+            [style.width]="getProgreso1"
+            role="progressbar">
+
+
+
+          </div>
+        </div>
+
+        <!-- Progress bar 2-->
+        <div class="progress m-t-20">
+          <!-- active la animacion de la barra-->
+          <div
+            class="active progress-bar bg-info progress-bar-striped"
+            style="height: 10px"
+            [style.width]="getProgreso2"
+            role="progressbar">
+
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+
+        <app-incrementador (valorEmitido)="progreso1 = $event"
+                           [progreso]="progreso1">
+        </app-incrementador>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+
+        <app-incrementador (valorEmitido)="progreso2 = $event"
+                           [btnClass]="'btn-info'"
+                           [progreso]="progreso2">
+        </app-incrementador>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- End PAge Content -->
+<!-- ============================================================== -->
