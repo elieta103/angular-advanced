@@ -1,0 +1,32 @@
+Inicializa el proyecto back, crea el json-package
+npm init -y
+
+npm i express --save
+npm i mongoose
+npm i dotenv
+npm i cors
+
+npm install -g nodemon
+
+
+nodemon index.js
+despues de editar el json-package
+npm run start:dev
+
+
+---------------- MONGO DB ACCESO -------------------------------------
+user : gressheliel@gmail.com
+pwd  : elieta103
+
+- Create Cluster , o usar uno existente.
+- Connect
+- Connect using MongoDB Compass
+- Crear un usuario, desde Database Access
+- Add new database user, autogenerar el password, generar user
+	user : mean_user_advanced
+	pwd  : MS2UeGoxeP8la1em
+- Agregar User Provilegies -> specific privilegies -> readWriteAnyDatabase@admin
+
+
+
+
